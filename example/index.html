@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Vue split characters - v-split-charactes directive for Vue</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+            .animation{
+                
+            }
+            .animation span{
+                transition:all 0.3s ease;
+                transform:translate3d(0,30px,0);
+                opacity:0;
+                display:inline-block;
+            }
+            .animation.show span{
+                
+                opacity:1;
+                transform:translate3d(0,0,0);
+            }
+            .animation span:nth-child(1){
+                transition-delay:0.1s;
+            }
+            .animation span:nth-child(2){
+                transition-delay:0.2s;
+            }
+            .animation span:nth-child(3){
+                transition-delay:0.3s;
+            }
+            .animation span:nth-child(4){
+                transition-delay:0.4s;
+            }
+            .animation span:nth-child(5){
+                transition-delay:0.5s;
+            }
+            .animation span:nth-child(6){
+                transition-delay:0.6s;
+            }
+            .animation span:nth-child(7){
+                transition-delay:0.7s;
+            }
+            .animation span:nth-child(8){
+                transition-delay:0.8s;
+            }
+            .animation span:nth-child(9){
+                transition-delay:0.9s;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <h1>Vue split characters</h1>
+        <h3>v-split-charactes directive for Vue</h3>
+
+        <div id="app">
+            <input type="text" v-model="dynamic"><br>
+            <button @click="show=!show">{{!show ? "play" : "reverse"}}</button>
+            <div :class="['animation',{show:show}]" v-split-characters>Test Test</div>
+            <div :class="['animation',{show:show}]" v-split-characters="dynamic"></div>
+        </div>
+
+        <script src="http://unpkg.com/vue"></script>
+        <script src="../dist/v-split-characters.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

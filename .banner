@@ -1,0 +1,11 @@
+/**
+ * VueSplitCharacters plugin v%version%
+ * 
+ * v-split-characters directive for vue
+ *
+ * @author mosle <yskysd@gmail.com>
+ * https://github.com/mosle/vue-split-characters
+ *
+ * Released under the MIT License.
+ */
+
