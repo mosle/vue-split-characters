@@ -3,7 +3,7 @@
 v-split-characters directive for VueJS (2.x)
 
 ## Demo
-
+<a href="https://mosle.github.io/vue-split-characters/" target="_blank">demo</a>
 
 ## About
 
@@ -11,7 +11,9 @@ This plugins adds a v-split-characters directive that splits the inner text into
 Mainly, it's used for implementing css text-characters animation.
 
 ## Install
-
+```
+npm install vue-split-characters
+```
 
 
 ## Usage
